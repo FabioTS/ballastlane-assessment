@@ -1,6 +1,6 @@
 # E-Commerce Technical Assessment
 
-This repository implements a small full-stack e-commerce catalog using Clean Architecture, ASP.NET Core Web API, Entity Framework Core with SQLite, JWT authentication, and an Angular frontend.
+This repository implements a small full-stack e-commerce catalog using Clean Architecture, ASP.NET Core Web API, Entity Framework Core with SQL Server Express, JWT authentication, and an Angular frontend.
 
 ## Project structure
 
@@ -72,6 +72,8 @@ User
 
 ## Running the backend
 
+The default connection targets the local `SQLEXPRESS` instance and uses Windows Integrated Authentication (the current Windows account). Ensure SQL Server Express is installed and running. On first run, the API creates the `ECommerceDb` database and seeds demo users and products.
+
 From the repository root:
 
 ```bash
@@ -117,6 +119,6 @@ dotnet test ECommerce.Tests/ECommerce.Tests.csproj --nologo
 
 ## Notes
 
-- The project uses SQLite for local development simplicity and fast setup.
+- The project uses SQL Server Express with Windows Integrated Authentication for local development.
 - The app is intentionally small so it stays easy to explain during a technical interview and code review.
 - The frontend is designed to demonstrate auth flow and CRUD against the backend without adding unnecessary complexity.
