@@ -1,0 +1,32 @@
+### Get all tasks
+GET http://localhost:5000/api/task
+
+### Get one task by id
+GET http://localhost:5000/api/task/{task-id}
+
+### Create task
+POST http://localhost:5000/api/task
+Content-Type: application/json
+
+{
+  "title": "Finish the project report",
+  "description": "Review final notes and send the summary",
+  "status": "InProgress",
+  "dueDate": "2026-10-20T00:00:00",
+  "userId": "22222222-2222-2222-2222-222222222222"
+}
+
+### Update task
+PUT http://localhost:5000/api/task/{task-id}
+Content-Type: application/json
+
+{
+  "title": "Finish the project report",
+  "description": "Updated notes and final summary",
+  "status": "Blocked",
+  "dueDate": "2026-10-25T00:00:00",
+  "userId": "22222222-2222-2222-2222-222222222222"
+}
+
+### Delete task
+DELETE http://localhost:5000/api/task/{task-id}

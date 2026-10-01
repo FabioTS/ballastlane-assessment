@@ -1,0 +1,24 @@
+We are building a small task-management REST API. The implementation should prioritize clarity, maintainability and pragmatic design over architectural complexity.
+
+Each task will have the folllowing fields: title, description, status, due_date
+- Title: required string
+- Description: optional string
+- Status: enum with To Do, In Progress, Blocked, Done
+- Due_Date: optional date for completion
+- User: Guid for user relationship
+
+There must be no User entity, User table, authentication system, authorization system, or user-management functionality. A Guid UserId property on Task is sufficient to represent ownership/association.
+
+Do not overengineer, prefer the simplest implementation that satisfies the requirements.
+The architecture should be appropriate for the size of this application, not a scaled-down enterprise architecture.
+There should be a single controller with CRUD operations
+The technology stack should be .NET, ASP.NET, EF with simple DB
+Do not add anything that could make the code too much complex
+
+Do not generate any implementation code yet.
+First, provide only the implementation plan.
+Stop after presenting the plan and wait for my explicit approval.
+Then, we are going to implement each step, one by one, with my review
+
+
+
